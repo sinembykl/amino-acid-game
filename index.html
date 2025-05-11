@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amino Acid Guessing Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Who Am I? - Amino Acid Edition</h1>
+
+    <!-- Player Setup -->
+    <div id="player-setup">
+      <label for="player-count">How many players?</label>
+      <input type="number" id="player-count" min="1" max="10">
+      <button id="set-players-btn">Set Players</button>
+      <div id="nicknames-inputs"></div>
+      <button id="start-game-btn" style="display:none">Start Game</button>
+    </div>
+
+      <!-- Game Area -->
+    <div id="game-area" style="display: none;">
+      <h2 id="player-name">Now playing:</h2>
+      <div id="timer">Time left: 05:00</div>
+      <img id="amino-img" src="" alt="Amino Acid Image" style="display:none;" />
+      <p id="clue">Press Start to get a clue!</p>
+
+      <div class="buttons">
+        <button id="true-btn" disabled>Correct</button>
+        <button id="false-btn" disabled>Incorrect</button>
+        <button id="pass-btn" disabled>Pass</button>
+      </div>
+
+      <div class="score">
+        <p>Score: <span id="score">0</span></p>
+        <p id="passes">Passes left: 3</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
