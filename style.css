@@ -1,0 +1,97 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f4f7; /* Light background color for a calm feel */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+#amino-img {
+  max-width: 90vw; /* 90% of the viewport width */
+  max-height: 80vh;
+  margin: 20px auto; /* Centers the image */
+  display: none;
+  object-fit: contain; /* Keeps the image's shape without stretching */
+}
+
+.buttons {
+  display: flex; /* Ensure buttons are in a row */
+  justify-content: center; /* Center buttons horizontally */
+  flex-wrap: wrap; /* Allow buttons to wrap if necessary */
+  gap: 15px; /* Add space between buttons */
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50; /* Nature-inspired green */
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Ensure the button stays visible */
+}
+
+.buttons button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.buttons button:disabled {
+  background-color: #ccc; /* Light gray when disabled */
+  cursor: not-allowed;
+}
+
+.score {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#timer {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff5733; /* Timer color with a hint of orange */
+}
+
+#passes {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#player-setup {
+  margin-top: 30px;
+}
+
+#player-setup label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#player-count {
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 50px;
+}
+
+#start-game-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff; /* Blue color for the start button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#start-game-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
