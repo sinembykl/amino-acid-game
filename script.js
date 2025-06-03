@@ -162,6 +162,7 @@ const setPlayersBtn = document.getElementById("set-players-btn");
 const nicknamesContainer = document.getElementById("nicknames-inputs");
 const startGameBtn = document.getElementById("start-game-btn");
 
+
 setPlayersBtn.onclick = () => {
   const count = parseInt(playerCountInput.value);
   nicknamesContainer.innerHTML = "";

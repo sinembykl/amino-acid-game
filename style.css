@@ -2,19 +2,22 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f0f4f7; /* Light background color for a calm feel */
+  background-image: url(images/backgroung.png);
+  
+  background-repeat: no-repeat; 
   margin: 0;
   padding: 0;
+  background-repeat: no-repeat;
 }
 
 .container {
-  margin-top: 50px;
+  margin-top: 5px;
 }
 
 #amino-img {
-  max-width: 90vw; /* 90% of the viewport width */
-  max-height: 80vh;
-  margin: 20px auto; /* Centers the image */
+  max-width: 70vw; /* 90% of the viewport width */
+  max-height: 60vh;
+  margin: 8px auto; /* Centers the image */
   display: none;
   object-fit: contain; /* Keeps the image's shape without stretching */
 }
@@ -27,7 +30,7 @@ body {
 }
 
 .buttons button {
-  margin: 10px;
+  margin: 3px;
   padding: 10px 20px;
   font-size: 16px;
   background-color: #4caf50; /* Nature-inspired green */
@@ -39,6 +42,19 @@ body {
   display: inline-block; /* Ensure the button stays visible */
 }
 
+
+
+
+#false-btn {
+    background-color: #f44336; /* Bright red */
+
+}
+
+#pass-btn {
+    background-color:darkgoldenrod  ;
+}
+
+
 .buttons button:hover {
   background-color: #45a049; /* Darker green on hover */
 }
@@ -49,7 +65,7 @@ body {
 }
 
 .score {
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: bold;
   font-size: 18px;
 }
@@ -58,6 +74,13 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #ff5733; /* Timer color with a hint of orange */
+  background-color: #ffffff;
+  padding: 10px 20px;              /* Space inside the box */
+  border-radius: 10px;             /* Rounded corners */
+  display: inline-block;           /* Only as wide as needed */
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  margin: 10px auto
 }
 
 #passes {
@@ -90,6 +113,13 @@ body {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
+  background-color: #ffffff;
+  padding: 10px 20px;              /* Space inside the box */
+  border-radius: 10px;             /* Rounded corners */
+  display: inline-block;           /* Only as wide as needed */
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  margin: 10px auto
 }
 
 #start-game-btn:hover {
