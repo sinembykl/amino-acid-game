@@ -44,6 +44,8 @@ function setupPlayers(namesArray) {
 
 function startGame() {
   document.getElementById("game-area").style.display = "block";
+  document.getElementById("Qr-image").style.display = "none";
+
   resetPlayerState();
   enableButtons();
   startTimer();
@@ -83,6 +85,7 @@ document.getElementById("pass-btn").onclick = () => {
     alert("No passes left!");
   }
 };
+
 
 function nextQuestion() {
   if (answeredCards === aminoAcids.length) {

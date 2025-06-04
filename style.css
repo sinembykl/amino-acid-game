@@ -8,11 +8,21 @@ body {
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
+  object-fit: contain;
 }
 
 .container {
   margin-top: 5px;
 }
+
+#Qr-image {
+    max-width: 20vw;
+  margin: 200px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 #amino-img {
   max-width: 70vw; /* 90% of the viewport width */
